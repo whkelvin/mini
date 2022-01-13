@@ -2,3 +2,61 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+.matrix-canvas
+{
+  @apply bg-nord-default;
+  @apply w-full h-full;
+}
+
+.terminal
+{
+  @apply bg-nord-darker;
+  @apply bg-opacity-95;
+  @apply rounded-md;
+  @apply flex ;
+  @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2;
+  @apply  w-11/12;
+  @apply z-10
+  filter: drop-shadow(0px 8px 24px #2e3440);
+  max-width: 520px;
+}
+
+.terminal-content
+{
+  @apply pl-6 pr-6;
+  @apply pt-8 pb-8 md:pt-8 md:pb-8;
+  @apply mt-auto mb-auto;
+  @apply text-snow-dark;
+  @apply font-bold;
+  font-family: Ubuntu;
+}
+
+.terminal-prompt-name
+{
+  @apply text-green-default;
+}
+
+.terminal-prompt-path
+{
+  @apply text-blue-dark;
+}
+
+.terminal-result
+{
+  @apply text-snow-dark;
+  @apply leading-tight;
+}
+
+.terminal-link
+{
+  @apply text-snow-dark;
+  @apply no-underline
+}
+
+.terminal-link:hover,
+.terminal-link:focus
+{
+  @apply text-blue-default;
+}
+
+

@@ -10,18 +10,6 @@
   overflow: hidden;
 }
 
-.link
-{
-  color: #4C566A;
-  text-decoration: none;
-}
-
-.link:hover
-{
-  color: #81A1C1;
-
-}
-
 .content {
     width: 70%;
     margin: 0 auto;
