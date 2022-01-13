@@ -1,0 +1,41 @@
+{
+  "name": "mini",
+  "description": "A minimal Ghost theme",
+  "version": "0.0.1",
+  "engines": {
+    "ghost": ">=3.0.0",
+    "ghost-api": "v3"
+  },
+  "license": "WTFPL",
+  "author": {
+    "name": "whkelvin",
+    "email": "whkelvin.hsu@gmail.com"
+  },
+  "gpm": {
+    "type": "theme",
+    "categories": [
+      "Minimal",
+      "Blog"
+    ]
+  },
+  "keywords": [
+    "ghost",
+    "theme",
+    "ghost-theme"
+  ],
+  "config": {
+    "posts_per_page": 10,
+    "image_sizes": {}
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
+    "tailwindcss": "^3.0.13"
+  },
+  "scripts": {
+    "dev": "postcss ./assets/css/tailwind.raw.css -o ./assets/css/tailwind.built.css ; ghost restart ;",
+    "build": "NODE_ENV=production npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
