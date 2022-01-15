@@ -2,27 +2,24 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-.matrix-canvas
-{
+.matrix-canvas {
   @apply bg-nord-default;
   @apply w-full h-full;
 }
 
-.terminal
-{
+.terminal {
   @apply bg-nord-darker;
   @apply bg-opacity-95;
   @apply rounded-md;
-  @apply flex ;
+  @apply flex;
   @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2;
-  @apply  w-11/12;
+  @apply w-11/12;
   @apply z-10;
   filter: drop-shadow(0px 8px 24px #2e3440);
   max-width: 520px;
 }
 
-.terminal-content
-{
+.terminal-content {
   @apply pl-6 pr-6;
   @apply pt-8 pb-8 md:pt-8 md:pb-8;
   @apply mt-auto mb-auto;
@@ -31,39 +28,34 @@
   font-family: Ubuntu;
 }
 
-.terminal-prompt-name
-{
+.terminal-prompt-name {
   @apply text-green-default;
 }
 
-.terminal-prompt-path
-{
+.terminal-prompt-path {
   @apply text-blue-dark;
 }
 
-.terminal-result
-{
+.terminal-result {
   @apply text-nord-light;
   @apply leading-tight;
 }
 
-.terminal-link
-{
+.terminal-link {
   @apply text-nord-light;
-  @apply no-underline
+  @apply no-underline;
 }
 
 .terminal-link:hover,
-.terminal-link:focus
-{
+.terminal-link:focus {
   @apply text-blue-default;
 }
 
 /*
  * Post Styles and Ghost Default
 */
-.html, body
-{
+.html,
+body {
   margin: 0;
   padding: 0;
   position: fixed;
@@ -359,4 +351,3 @@ h3 {
 .kg-card figcaption strong {
   color: rgba(0, 0, 0, 0.8);
 }
-
