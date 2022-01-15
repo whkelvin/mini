@@ -1,5 +1,39 @@
-{{#foreach navigation}}
-  &emsp;&emsp;│<br>
-  &emsp;&emsp;└─&emsp;<a class="terminal-link" href="{{url absolute="true"}}">{{label}}</a><br>
-{{/foreach}}
+{{!-- TAILWIND CSS DOES NOT WORK HERE, put styles in css and reference the class here --}}
+{{#is "home"}}
+
+  {{#foreach navigation}}
+    &emsp;&emsp;│<br>
+    &emsp;&emsp;└─&emsp;<a class="terminal-link" href="{{url absolute="true"}}">{{label}}</a><br>
+  {{/foreach}}
+
+{{else}}
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+      {{#foreach navigation}}
+        <a href="{{url absolute="true"}}">{{label}}</a><br>
+      {{/foreach}}
+
+    </div>
+
+    <div class="nav">
+      <div class="dark-mode-menu-icon" onClick="openNav()">{{> "icons/light-mode-menu-icon"}}</div>
+      <div class="light-mode-menu-icon" onClick="openNav()">{{> "icons/dark-mode-menu-icon"}}</div>
+
+      <div class="name-tag-wrapper">
+        <div class="nav-name">NAME</div>
+        <div class="nav-title">TITLE</div>
+      </div>
+
+      <div class="dark-mode-toggle dark-mode-icon" onClick="toggleDarkMode()">{{> "icons/dark-mode-icon"}}</div>
+      <div class="dark-mode-toggle light-mode-icon" onClick="toggleDarkMode()">{{> "icons/light-mode-icon"}}</div>
+
+        <!--
+        <div class="flex dark:hidden">lighh</div>
+        <div class="hidden dark:flex">dark</div>
+                -->
+    </div>
+
+{{/is}}
 
