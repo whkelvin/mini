@@ -1,0 +1,27 @@
+{{!< default}}
+
+
+{{#post}}
+{{!-- Everything inside the #post block pulls data from the post --}}
+{{!-- {{> nav}} --}}
+<div class="{{post_class}} post-content-wrapper">
+    <h1>{{ title }}</h1>
+    {{ content }}
+</div>
+<!--
+<aside class="pb-10">
+    <h1 class="w-11/12 max-w-6xl ml-auto mr-auto sm:w-4/5">Read More</h1>
+    <div>
+        {{#get "posts" filter="id:-{{id}}" include="authors" limit="3" as |more_posts|}}
+            {{#if more_posts}}
+                {{#foreach more_posts}}
+                    {{> "post-card"}}
+                {{/foreach}}
+            {{/if}}
+        {{/get}}
+
+    </div>
+</aside>
+-->
+{{/post}}
+

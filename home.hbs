@@ -8,29 +8,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="{{asset 'css/tailwind.built.css'}}" rel="stylesheet">
-    <link href="{{asset 'css/screen.css'}}" rel="stylesheet">
     {{ghost_head}}
   </head>
   <body class="{{body_class}}">
-    {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
     {{{body}}}
 
     <div>
       <canvas id="canvas" class="matrix-canvas"></canvas>
       <div class="terminal">
           <div class="terminal-content">
-            <span class="terminal-prompt-name">whkelvin.hsu@gmail.com:</span>
+
+            <span class="terminal-prompt-name">
+              {{#if @custom.terminal_prompt_name}}
+                {{@custom.terminal_prompt_name}}:
+              {{/if}}
+            </span>
+
             <span class="terminal-prompt-path">/home</span>
             <span> $&ensp;ls<br></span>
             <div class="terminal-result">
-              &emsp;&emsp;│<br>
-              &emsp;&emsp;└─&emsp;<a class="terminal-link" href="www.google.com">Resume</a><br>
-              &emsp;&emsp;│<br>
-              &emsp;&emsp;└─&emsp;<a class="terminal-link" href="www.google.com">Blogs</a><br>
-              &emsp;&emsp;│<br>
-              &emsp;&emsp;└─&emsp;<a class="terminal-link" href="www.google.com">GitLab</a><br>
-              &emsp;&emsp;│<br>
-              &emsp;&emsp;└─&emsp;<a class="terminal-link" href="www.google.com">LinkedIn</a><br>
+              {{ navigation }}
             </div>
           </div>
       <div>
