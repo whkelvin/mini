@@ -17,22 +17,30 @@
 
     </div>
 
-    <div class="nav container">
-      <div class="dark-mode-menu-icon" onClick="openNav()">{{> "icons/light-mode-menu-icon"}}</div>
-      <div class="light-mode-menu-icon" onClick="openNav()">{{> "icons/dark-mode-menu-icon"}}</div>
+    <div class="container">
+      <div class = "nav">
+        <div class="dark-mode-menu-icon" onClick="openNav()">{{> "icons/light-mode-menu-icon"}}</div>
+        <div class="light-mode-menu-icon" onClick="openNav()">{{> "icons/dark-mode-menu-icon"}}</div>
 
-      <div class="name-tag-wrapper">
-        <div class="nav-name">NAME</div>
-        <div class="nav-title">TITLE</div>
+        <div class="name-tag-wrapper">
+
+          <div class="nav-name">
+            {{#if @custom.user_name}}
+              {{@custom.user_name}}
+            {{/if}}
+          </div>
+
+          <div class="nav-title">
+            {{#if @custom.user_title}}
+              {{@custom.user_title}}
+            {{/if}}
+          </div>
+
+        </div>
+
+        <div class="dark-mode-toggle dark-mode-icon" onClick="toggleDarkMode()">{{> "icons/dark-mode-icon"}}</div>
+        <div class="dark-mode-toggle light-mode-icon" onClick="toggleDarkMode()">{{> "icons/light-mode-icon"}}</div>
       </div>
-
-      <div class="dark-mode-toggle dark-mode-icon" onClick="toggleDarkMode()">{{> "icons/dark-mode-icon"}}</div>
-      <div class="dark-mode-toggle light-mode-icon" onClick="toggleDarkMode()">{{> "icons/light-mode-icon"}}</div>
-
-        <!--
-        <div class="flex dark:hidden">lighh</div>
-        <div class="hidden dark:flex">dark</div>
-                -->
     </div>
 
 {{/is}}

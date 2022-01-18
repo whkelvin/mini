@@ -5,12 +5,13 @@
 /* LAYOUT */
 .container
 {
-  @apply w-11/12 max-w-6xl sm:w-4/5;
+  @apply w-11/12 sm:max-w-6xl;
   @apply rounded-lg;
   @apply bg-glass-default dark:bg-glass-dark;
   @apply border-solid;
-  @apply pt-5 pb-5 pl-5 pr-5 sm:pt-8 sm:pb-8 sm:pl-16 sm:pr-16;
-  @apply mt-2 sm:mt-4 ml-auto mr-auto mb-5;
+  
+  @apply pl-4 pr-4 pt-5 pb-5 sm:pt-8 sm:pb-8 sm:pl-16 sm:pr-16;
+  @apply ml-auto mr-auto mt-2 mb-2 sm:mt-4 sm:ml-auto sm:mr-auto;
 }
 
 .matrix-canvas {
@@ -67,9 +68,9 @@
 */
 
 .dark-mode-toggle svg {
-  @apply items-center;
-  width: 30px;
+  width: 50px;
   height: 30px;
+  @apply mt-auto mb-auto;
 }
 
 .dark-mode-icon
@@ -84,6 +85,7 @@
 .light-mode-menu-icon
 {
   @apply flex dark:hidden;
+  @apply justify-self-start;
 }
 
 .dark-mode-menu-icon
@@ -94,14 +96,18 @@
 /*
  * NAV
 */
-.nav {
-  @apply flex flex-row items-center;
-  @apply justify-between;
+
+.nav 
+{
+  @apply flex flex-row justify-between;
 }
+
 
 .name-tag-wrapper
 {
   @apply flex flex-col;
+  @apply justify-self-center;
+  @apply mt-auto mb-auto;
 }
 
 .nav-name
@@ -163,9 +169,11 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
   @apply bg-blue-light dark:bg-nord-dark;
   @apply text-nord-default dark:text-snow-dark;
   font-family: "Ubuntu";
+  overflow-x: hidden;
 }
 
 .home-body {
