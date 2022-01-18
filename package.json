@@ -42,7 +42,7 @@
     "tailwindcss": "^3.0.13"
   },
   "scripts": {
-    "dev": "postcss ./assets/css/tailwind.raw.css -o ./assets/css/tailwind.built.css ; ghost restart ;",
+    "dev": "postcss ./assets/css/raw/*.css --base ./assets/css/raw --dir ./assets/css ;  ghost restart ;",
     "build": "NODE_ENV=production npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   }

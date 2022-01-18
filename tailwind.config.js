@@ -57,13 +57,20 @@ module.exports = {
             },
             white: {
                 default: "#ffffff",
-                glass: "#F6F8FA",
             },
             frost: {
                 teal: "#8FBCBB",
                 lightBlue: "#88C0D0",
                 blue: "#81A1C1",
             },
+            glass:{
+              default: "#F6F8FA",
+              dark: "#2e3440",
+            },
+            grey:{
+              default: "#B6B6B6",
+              dark: "#717E98"
+            }
         },
     },
     plugins: [],

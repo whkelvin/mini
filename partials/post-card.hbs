@@ -1,0 +1,20 @@
+<div class="post-card-wrapper">
+  <div class="flex flex-col ml-auto mr-auto lg:flex-row">
+    {{#if feature_image}}
+    <a class="self-center max-w-full lg:max-w-xs sm:self-start" href="{{ url }}">
+      <img class="w-full mt-0 mb-0" src="{{img_url feature_image}}" alt="{{ title }}" loading="lazy" />
+    </a>
+    {{/if}}
+
+    <div class="p-2">
+      {{#if primary_tag}}
+      {{#primary_tag}}
+      <h3 class="mb-1 text-sm text-blue-default">{{ name }}</h3>
+      {{/primary_tag}}
+      {{/if}}
+      <a class="post-card-image-link" href="{{ url }}">
+        <h2 class="underline">{{ title }}</h2>
+      </a>
+    </div>
+  </div>
+</div>

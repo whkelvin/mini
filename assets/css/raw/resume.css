@@ -1,0 +1,77 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.resume h1 
+{
+  @apply text-xl;
+  @apply text-nord-dark dark:text-snow-dark;
+  @apply font-bold;
+}
+
+.resume h2
+{
+  @apply text-base text-blue-default dark:text-frost-blue;
+  @apply font-bold;
+}
+
+.resume h3
+{
+  @apply text-sm text-grey-default dark:text-grey-dark;
+  @apply font-bold;
+}
+
+.resume h4
+{
+  @apply text-sm text-grey-default dark:text-grey-dark;
+}
+
+.resume figcaption {
+  @apply text-sm;
+  @apply text-center;
+  @apply font-bold;
+  @apply mt-1;
+}
+
+.resume hr {
+  border-radius: 1px;
+  border-width: 1px;
+  @apply mt-10 mb-10;
+  @apply border-solid border-snow-dark;
+  @apply dark:border-nord-darker;
+  @apply font-bold;
+}
+
+.resume p {
+  @apply font-normal;
+  @apply text-sm;
+}
+
+.resume a {
+  @apply text-blue-default;
+  @apply font-bold;
+  @apply underline;
+}
+
+.resume blockquote {
+  @apply p-2;
+  @apply border-l-4;
+  @apply rounded-sm border-blue-default;
+  @apply mt-5 mb-5;
+}
+
+.resume ul {
+  @apply list-disc;
+  @apply list-inside;
+}
+
+.post figure iframe {
+  @apply w-full h-full;
+  @apply absolute top-0 left-0;
+}
+
+.resume pre code
+{
+  font-family: "Ubuntu";
+}
+
