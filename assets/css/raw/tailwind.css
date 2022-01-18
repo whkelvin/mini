@@ -10,7 +10,7 @@
   @apply bg-glass-default dark:bg-glass-dark;
   @apply border-solid;
   @apply pt-5 pb-5 pl-5 pr-5 sm:pt-8 sm:pb-8 sm:pl-16 sm:pr-16;
-  @apply mt-2 sm:mt-4 ml-auto mr-auto;
+  @apply mt-2 sm:mt-4 ml-auto mr-auto mb-5;
 }
 
 .matrix-canvas {
