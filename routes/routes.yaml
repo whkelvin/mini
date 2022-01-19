@@ -1,0 +1,15 @@
+# UPLOAD THIS FILE ON ADMIN PAGE
+routes:
+  /: home
+  /resume/:
+    template: resume
+    data: page.resume
+
+collections:
+  /blog/:
+    permalink: /blog/{slug}/
+    template: index
+
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/

@@ -57,8 +57,9 @@
 }
 
 .resume ul {
-  @apply list-disc;
-  @apply list-inside;
+  @apply m-0;
+  padding-left: 1.2em; /* Set the distance from the list edge to 1x the font size */
+  @apply list-disc list-outside;
 }
 
 .post figure iframe {
