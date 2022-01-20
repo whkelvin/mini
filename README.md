@@ -20,7 +20,25 @@ A minimal and nerdy theme for Ghost.
 4. run `yarn dev` every time you've made a change and would like to see the change reflected on the page
 
 # Theme Configuration After Deployment
-- TODO: set up name, title, and name in terminal
-- TODO: set up routing
-- TODO: adding a resume (include a template in there)
-- TODO: configure links in nav
+## Name, Title, and Prompt
+In the ghost admin page, go to settings => Site Design => Site-wide, you'll be able to find settings for your name and title, these will show up in the nav bar.
+
+Prompt is under settings => SiteDesign => Homepage, this will change the prompt of the terminal on the home page.
+
+
+## Routing
+In the ghost admin page, go to settings => Labs => Routes and upload mini/routes/routes.yaml. 
+
+```
+{your domain name}/ => home.hbs
+{your domain name}/blog/ => index.hbs
+{your domain name}/resume/ => the resume page you'll create below
+
+```
+
+## Adding a Resume
+Add a new page in the ghost admin and set the page URL to resume, and your resume should show up at {your domain name}/resume/.
+
+## Links in Nav and Side Menu
+Links defined in Primary Navigation under settings => navigation will show up.
+

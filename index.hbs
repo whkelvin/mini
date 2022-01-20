@@ -1,3 +1,9 @@
 {{!< default}}
 
-<div>hello</div>
+{{pagination}}
+
+<div class="post-feed{{#match @custom.feed_layout "List"}} list{{/match}}">
+  {{#foreach posts}}
+    {{> "post-card"}}
+  {{/foreach}}
+</div>
