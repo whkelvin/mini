@@ -1,5 +1,5 @@
 /* LAYOUT */
-.container
+.nav-container
 {
   @apply w-11/12 sm:max-w-6xl;
   @apply rounded-lg;
@@ -8,6 +8,17 @@
   
   @apply pl-4 pr-4 pt-5 pb-5 sm:pt-8 sm:pb-8 sm:pl-16 sm:pr-16;
   @apply ml-auto mr-auto mt-2 mb-2 sm:mt-4 sm:ml-auto sm:mr-auto;
+}
+
+.container
+{
+  @apply w-11/12 sm:max-w-6xl;
+  @apply rounded-lg;
+  @apply bg-glass-default dark:bg-glass-dark;
+  @apply border-solid;
+  
+  @apply pl-4 pr-4 pt-5 pb-5 sm:pt-8 sm:pb-8 sm:pl-16 sm:pr-16;
+  @apply ml-auto mr-auto mt-2 mb-8 sm:mt-4 sm:ml-auto sm:mr-auto;
 }
 
 .matrix-canvas {
@@ -158,9 +169,6 @@
 }
 
 
-/*
- * Post Styles
-*/
 .html,
 body {
   margin: 0;
@@ -184,95 +192,3 @@ body {
   bottom: 0px;
   overflow: hidden;
 }
-
-.post-content-wrapper {
-  @apply flex flex-col;
-  @apply h-full;
-}
-
-.page-content-wrapper {
-  @apply flex flex-col;
-  @apply h-full;
-}
-
-button {
-  outline: 0;
-}
-
-h1 {
-  @apply text-2xl sm:text-3xl;
-  @apply font-black;
-}
-h2 {
-  @apply text-xl sm:text-2xl;
-  @apply font-black;
-}
-h3 {
-  @apply text-lg sm:text-xl;
-  @apply font-black;
-}
-
-.post figcaption,
-.page figcaption {
-  @apply text-sm;
-  @apply text-center;
-  @apply font-bold;
-  @apply mt-1;
-}
-
-.post hr,
-.page hr {
-  border-radius: 1px;
-  border-width: 1px;
-  @apply mt-10 mb-10;
-  @apply border-solid border-snow-dark;
-  @apply dark:border-nord-darker;
-  @apply font-bold;
-}
-
-.post p,
-.page p {
-  @apply font-normal;
-  @apply text-sm;
-}
-
-.post a,
-.page a {
-  @apply text-blue-default;
-  @apply font-bold;
-  @apply underline;
-}
-
-.post blockquote,
-.page blockquote {
-  @apply p-2;
-  @apply border-l-4;
-  @apply rounded-sm border-blue-default;
-  @apply mt-5 mb-5;
-}
-
-.post ul,
-.page ul {
-  @apply list-disc;
-  @apply list-inside;
-}
-
-.post figure iframe {
-  @apply w-full h-full;
-  @apply absolute top-0 left-0;
-}
-
-.post-card-wrapper {
-  @apply w-11/12 max-w-6xl;
-  @apply p-2 pt-5 mt-5 ml-auto mr-auto sm:p-10;
-  @apply rounded-lg sm:w-4/5;
-  @apply bg-glass-default dark:bg-glass-dark;
-}
-
-.post pre code,
-.page pre code
-{
-  font-family: "Ubuntu";
-}
-
-

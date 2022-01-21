@@ -24,3 +24,9 @@ function setTheme() {
         document.documentElement.classList.remove("dark");
     }
 }
+
+if (window.localStorage.getItem("IsDarkModeEnabled") === null) {
+  window.localStorage.setItem("IsDarkModeEnabled", "false");
+}
+setTheme();
+
