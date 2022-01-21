@@ -104,8 +104,8 @@
 {
   border-radius: 1px;
   border-width: 1px;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   border-style: solid;
   --tw-border-opacity: 1;
   border-color: rgb(216 222 233 / var(--tw-border-opacity));
@@ -114,7 +114,7 @@
 .dark .resume hr, .dark .post hr
 {
   --tw-border-opacity: 1;
-  border-color: rgb(46 52 64 / var(--tw-border-opacity));
+  border-color: rgb(76 86 106 / var(--tw-border-opacity));
 }
 
 .resume hr, .post hr
@@ -125,8 +125,8 @@
 .resume p, .post p
 {
   font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .resume a, .post a

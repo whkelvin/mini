@@ -50,9 +50,9 @@
 {
   border-radius: 1px;
   border-width: 1px;
-  @apply mt-10 mb-10;
+  @apply mt-4 mb-4;
   @apply border-solid border-snow-dark;
-  @apply dark:border-nord-darker;
+  @apply dark:border-nord-light;
   @apply font-bold;
 }
 
@@ -60,7 +60,7 @@
 .post p 
 {
   @apply font-normal;
-  @apply text-sm;
+  @apply text-base;
 }
 
 .resume a,

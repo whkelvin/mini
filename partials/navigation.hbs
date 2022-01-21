@@ -17,25 +17,25 @@
 
     </div>
 
-    <div class="container">
+    <div class="nav-container">
       <div class = "nav">
         <div class="dark-mode-menu-icon" onClick="openNav()">{{> "icons/light-mode-menu-icon"}}</div>
         <div class="light-mode-menu-icon" onClick="openNav()">{{> "icons/dark-mode-menu-icon"}}</div>
 
         <div class="name-tag-wrapper">
+          {{#link href="/"}}
+            <div class="nav-name">
+              {{#if @custom.user_name}}
+                {{@custom.user_name}}
+              {{/if}}
+            </div>
 
-          <div class="nav-name">
-            {{#if @custom.user_name}}
-              {{@custom.user_name}}
-            {{/if}}
-          </div>
-
-          <div class="nav-title">
-            {{#if @custom.user_title}}
-              {{@custom.user_title}}
-            {{/if}}
-          </div>
-
+            <div class="nav-title">
+              {{#if @custom.user_title}}
+                {{@custom.user_title}}
+              {{/if}}
+            </div>
+          {{/link}}
         </div>
 
         <div class="dark-mode-toggle dark-mode-icon" onClick="toggleDarkMode()">{{> "icons/dark-mode-icon"}}</div>
