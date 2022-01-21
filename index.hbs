@@ -1,9 +1,9 @@
 {{!< default}}
 
-{{pagination}}
-
-<div class="post-feed{{#match @custom.feed_layout "List"}} list{{/match}}">
+<div class="container">
   {{#foreach posts}}
     {{> "post-card"}}
   {{/foreach}}
+
+  {{pagination}}
 </div>
