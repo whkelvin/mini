@@ -256,9 +256,6 @@
 }
 
 
-/*
- * Post Styles
-*/
 .html,
 body {
   margin: 0;
@@ -267,18 +264,26 @@ body {
   --tw-bg-opacity: 1;
   background-color: rgb(236 239 244 / var(--tw-bg-opacity));
 }
+
+
 .dark .html, .dark body {
   --tw-bg-opacity: 1;
   background-color: rgb(59 66 82 / var(--tw-bg-opacity));
 }
+
+
 .html, body {
   --tw-text-opacity: 1;
   color: rgb(67 76 94 / var(--tw-text-opacity));
 }
+
+
 .dark .html, .dark body {
   --tw-text-opacity: 1;
   color: rgb(216 222 233 / var(--tw-text-opacity));
 }
+
+
 .html,
 body {
   font-family: "Ubuntu";
@@ -297,170 +302,3 @@ body {
   bottom: 0px;
   overflow: hidden;
 }
-
-.post-content-wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.page-content-wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-button {
-  outline: 0;
-}
-
-h1 {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-@media (min-width: 640px) {
-  h1 {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-}
-
-h1 {
-  font-weight: 900;
-}
-h2 {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-@media (min-width: 640px) {
-  h2 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-}
-h2 {
-  font-weight: 900;
-}
-h3 {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-@media (min-width: 640px) {
-  h3 {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-}
-h3 {
-  font-weight: 900;
-}
-
-.post figcaption, .page figcaption {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  text-align: center;
-  font-weight: 700;
-  margin-top: 0.25rem;
-}
-
-.post hr,
-.page hr {
-  border-radius: 1px;
-  border-width: 1px;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-  border-style: solid;
-  --tw-border-opacity: 1;
-  border-color: rgb(216 222 233 / var(--tw-border-opacity));
-}
-
-.dark .post hr, .dark .page hr {
-  --tw-border-opacity: 1;
-  border-color: rgb(46 52 64 / var(--tw-border-opacity));
-}
-
-.post hr, .page hr {
-  font-weight: 700;
-}
-
-.post p, .page p {
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.post a, .page a {
-  --tw-text-opacity: 1;
-  color: rgb(94 129 172 / var(--tw-text-opacity));
-  font-weight: 700;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-}
-
-.post blockquote, .page blockquote {
-  padding: 0.5rem;
-  border-left-width: 4px;
-  border-radius: 0.125rem;
-  --tw-border-opacity: 1;
-  border-color: rgb(94 129 172 / var(--tw-border-opacity));
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
-.post ul, .page ul {
-  list-style-type: disc;
-  list-style-position: inside;
-}
-
-.post figure iframe {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-
-.post-card-wrapper {
-  width: 91.666667%;
-  max-width: 72rem;
-  margin-top: 1.25rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0.5rem;
-  padding-top: 1.25rem;
-}
-
-@media (min-width: 640px) {
-  .post-card-wrapper {
-    padding: 2.5rem;
-  }
-}
-
-.post-card-wrapper {
-  border-radius: 0.5rem;
-}
-
-@media (min-width: 640px) {
-  .post-card-wrapper {
-    width: 80%;
-  }
-}
-
-.post-card-wrapper {
-  --tw-bg-opacity: 1;
-  background-color: rgb(246 248 250 / var(--tw-bg-opacity));
-}
-
-.dark .post-card-wrapper {
-  --tw-bg-opacity: 1;
-  background-color: rgb(46 52 64 / var(--tw-bg-opacity));
-}
-
-.post pre code,
-.page pre code
-{
-  font-family: "Ubuntu";
-}
-
-
