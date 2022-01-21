@@ -22,6 +22,11 @@
   @apply text-sm text-grey-default dark:text-grey-dark;
 }
 
+.resume h5 
+{
+  @apply text-xs text-grey-default dark:text-grey-dark;
+}
+
 .resume figcaption {
   @apply text-sm;
   @apply text-center;
@@ -56,10 +61,22 @@
   @apply mt-5 mb-5;
 }
 
-.resume ul {
+.resume ul,
+.resume ol
+{
   @apply m-0;
   padding-left: 1.2em; /* Set the distance from the list edge to 1x the font size */
-  @apply list-disc list-outside;
+  @apply list-outside;
+}
+
+.resume ul li
+{
+  @apply list-disc;
+}
+
+.resume ol li 
+{
+  @apply list-decimal;
 }
 
 .post figure iframe {
