@@ -1,9 +1,10 @@
 {{!< default}}
 
 <div class="container">
+  <div class="posts-wrapper">
   {{#foreach posts}}
     {{> "post-card"}}
   {{/foreach}}
-
+  </div>
   {{pagination}}
 </div>
