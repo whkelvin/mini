@@ -1,3 +1,21 @@
+/*EMBED*/
+.kg-card {
+  margin-bottom: 0.75rem;
+}
+
+.kg-embed-card {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */
+}
+
+.kg-embed-card iframe {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
 /*PAGINATION*/
 .pagination
 {
@@ -7,21 +25,18 @@
   justify-content: center;
 }
 
-.pagination a
-{
+.pagination a {
   --tw-text-opacity: 1;
   color: rgb(94 129 172 / var(--tw-text-opacity));
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
 
-.prev
-{
+.prev {
   margin-right: 0.5rem;
 }
 
-.next
-{
+.next {
   margin-left: 0.5rem;
 }
 
@@ -96,8 +111,7 @@
     color: rgb(67 76 94 / var(--tw-text-opacity));
 }
 
-.dark .kg-bookmark-title
-{
+.dark .kg-bookmark-title {
   --tw-text-opacity: 1;
   color: rgb(216 222 233 / var(--tw-text-opacity));
 }
@@ -117,8 +131,7 @@
     color: rgb(67 76 94 / var(--tw-text-opacity));
 }
 
-.dark .kg-bookmark-description
-{
+.dark .kg-bookmark-description {
   --tw-text-opacity: 1;
   color: rgb(216 222 233 / var(--tw-text-opacity));
 }
@@ -151,8 +164,7 @@
 
 }
 
-.dark .kg-bookmark-author, .dark .kg-bookmark-publisher
-{
+.dark .kg-bookmark-author, .dark .kg-bookmark-publisher {
   --tw-text-opacity: 1;
   color: rgb(216 222 233 / var(--tw-text-opacity));
 }
@@ -218,38 +230,32 @@ kg-callout-card,
     box-shadow: inset 0 0 0 1px rgba(124, 139, 154, 0.25);
 }
 
-.kg-callout-card-blue
-{
+.kg-callout-card-blue {
   background-color: rgb(94 129 172 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
 }
 
-.kg-callout-card-green
-{
+.kg-callout-card-green {
   background-color: rgb(163 190 140 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
 }
 
-.kg-callout-card-yellow
-{
+.kg-callout-card-yellow {
   background-color: rgb(235 203 139 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
 }
 
-.kg-callout-card-red
-{
+.kg-callout-card-red {
   background-color: rgb(184 81 91 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
 }
 
-.kg-callout-card-pink
-{
+.kg-callout-card-pink {
   background-color: rgb(191 97 106 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
 }
 
-.kg-callout-card-purple
-{
+.kg-callout-card-purple {
   background-color: rgb(180 142 173 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
 }

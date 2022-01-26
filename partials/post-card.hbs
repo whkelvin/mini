@@ -3,28 +3,32 @@
   {{#if feature_image}}
     <div>
       <a href="{{ url }}">
-      <img class="post-card-img" src="{{img_url feature_image}}" alt="{{ title }}" loading="lazy" />
+        <img class="post-card-img" src="{{img_url feature_image}}" alt="{{ title }}" loading="lazy" />
+      </a>
+    </div>
+  {{else}}
+    <div>
+      <a href="{{ url }}">
+        <img class="post-card-img" src="{{asset 'images/star_colored_ultrawide.png'}}" alt="{{title}}" loading="lazy">
       </a>
     </div>
   {{/if}}
-
+  
   <div class="post-card-content">
-
     <a class="post-card-title" href="{{ url }}">
       <h2>{{ title }}</h2>
     </a>
 
     {{#if primary_tag}}
       {{#primary_tag}}
-        <a href="{{url}}">
+        <a class="post-card-tag" href="{{url}}">
           <h3>{{ name }}</h3>
-          </a>
+        </a>
       {{/primary_tag}}
     {{else}}
       <h3>Random Posts</h3>
     {{/if}}
 
     <h4>{{date published_at format="DD MMMM YYYY"}}</h4>
-
   </div>
 </div>

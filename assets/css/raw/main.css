@@ -17,7 +17,7 @@
   @apply bg-glass-default dark:bg-glass-dark;
   @apply border-solid;
   
-  @apply pl-4 pr-4 pt-5 pb-5 sm:pt-8 sm:pb-8 sm:pl-16 sm:pr-16;
+  @apply pl-4 pr-4 pt-5 pb-5 sm:pt-8 sm:pb-8 sm:pl-16 sm:pr-16 md:pt-20 md:pl-24 md:pr-24;
   @apply ml-auto mr-auto mt-2 mb-8 sm:mt-4 sm:ml-auto sm:mr-auto;
 }
 
@@ -176,6 +176,7 @@ body {
   width: 100%;
   @apply bg-blue-light dark:bg-nord-dark;
   @apply text-nord-default dark:text-snow-dark;
+  @apply decoration-nord-default dark:decoration-snow-dark;
   font-family: "Ubuntu";
   overflow-x: hidden;
 }

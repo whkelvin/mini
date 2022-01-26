@@ -99,6 +99,18 @@
   }
 }
 
+@media (min-width: 768px) {
+  .container {
+    padding-top: 5rem;
+  }
+  .container {
+    padding-left: 6rem;
+  }
+  .container {
+    padding-right: 6rem;
+  }
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -344,6 +356,18 @@ body {
 .dark .html, .dark body {
   --tw-text-opacity: 1;
   color: rgb(216 222 233 / var(--tw-text-opacity));
+}
+
+
+.html, body {
+  -webkit-text-decoration-color: #434c5e;
+          text-decoration-color: #434c5e;
+}
+
+
+.dark .html, .dark body {
+  -webkit-text-decoration-color: #d8dee9;
+          text-decoration-color: #d8dee9;
 }
 
 
