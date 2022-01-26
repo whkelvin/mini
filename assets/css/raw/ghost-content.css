@@ -1,3 +1,44 @@
+/*EMBED*/
+.kg-card
+{
+  @apply mb-3;
+}
+
+.kg-embed-card {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */
+}
+
+.kg-embed-card iframe {
+  @apply w-full h-full;
+  @apply absolute top-0 left-0;
+}
+
+/*PAGINATION*/
+.pagination
+{
+  font-family: Ubuntu;
+  @apply font-bold;
+  @apply flex;
+  @apply justify-center;
+}
+
+.pagination a
+{
+  @apply text-blue-default;
+  @apply underline;
+}
+
+.prev
+{
+  @apply mr-2;
+}
+
+.next
+{
+  @apply ml-2;
+}
+
 .kg-width-wide {
   grid-column: wide-start / wide-end;
 }

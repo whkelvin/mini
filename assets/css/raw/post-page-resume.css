@@ -1,5 +1,47 @@
-/*STYLES FOR PAGE, POST AND RESUME*/
+/*STYLES FOR PAGE, POST, LIST OF POSTS AND RESUME*/
 
+.posts-wrapper
+{
+  @apply flex flex-col;
+  @apply items-center;
+}
+
+.post-card
+{
+  @apply flex flex-col sm:flex-row;
+  @apply mb-6;
+  @apply max-w-sm sm:w-full sm:max-w-full;
+  @apply sm:min-h-[150px];
+  @apply drop-shadow-lg;
+}
+
+.post-card a:hover
+{
+  @apply underline;
+}
+
+.post-card-tag
+{
+  @apply decoration-blue-default dark:decoration-frost-blue;
+}
+
+.post-card-img
+{
+  @apply sm:flex-none;
+  @apply rounded-t-lg sm:rounded-t-none sm:rounded-l-lg;
+  @apply sm:h-full sm:max-w-[220px];
+  @apply object-cover;
+}
+
+.post-card-content
+{
+  @apply sm:flex-grow;
+  @apply p-3;
+  @apply bg-white-default dark:bg-nord-dark;
+  @apply rounded-b-lg sm:rounded-b-none sm:rounded-r-lg;
+}
+
+.post-card h1,
 .resume h1,
 .post h1
 {
@@ -7,7 +49,12 @@
   @apply text-nord-dark dark:text-snow-dark;
   @apply font-bold;
 }
+.post h1
+{
+  @apply mb-3;
+}
 
+.post-card h2,
 .resume h2,
 .post h2
 {
@@ -15,25 +62,44 @@
   @apply text-nord-dark dark:text-snow-dark;
   @apply font-bold;
 }
+.post h2
+{
+  @apply mb-3;
+}
 
+.post-card h3,
 .resume h3,
 .post h3
 {
   @apply text-base text-blue-default dark:text-frost-blue;
   @apply font-bold;
 }
+.post h3
+{
+  @apply mb-3;
+}
 
+.post-card h4,
 .resume h4,
 .post h4
 {
   @apply text-sm text-grey-default dark:text-grey-dark;
   @apply font-bold;
 }
+.post h4
+{
+  @apply mb-3;
+}
 
+.post-card h5,
 .resume h5,
 .post h5
 {
   @apply text-sm text-grey-default dark:text-grey-dark;
+}
+.post h5
+{
+  @apply mb-3;
 }
 
 .resume figcaption,
@@ -42,7 +108,11 @@
   @apply text-sm;
   @apply text-center;
   @apply font-bold;
-  @apply mt-1;
+}
+.post figcaption
+{
+  @apply mt-3;
+  @apply mb-3;
 }
 
 .resume hr,
@@ -61,6 +131,11 @@
 {
   @apply font-normal;
   @apply text-base;
+}
+.post p
+{
+  @apply text-lg;
+  @apply mb-5;
 }
 
 .resume a,
@@ -90,6 +165,12 @@
   @apply list-outside;
 }
 
+.post ul,
+.post ol
+{
+  @apply mb-5;
+}
+
 .resume ul li,
 .post ul li
 {
@@ -113,5 +194,13 @@
 .post pre code
 {
   font-family: "Ubuntu";
+}
+
+.post pre
+{
+  @apply bg-white-default dark:bg-nord-dark;
+  @apply p-4;
+  @apply rounded-md;
+  @apply drop-shadow-sm;
 }
 

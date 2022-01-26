@@ -21,10 +21,7 @@ A minimal and nerdy theme for Ghost.
 
 # Theme Configuration After Deployment
 ## Name, Title, and Prompt
-In the ghost admin page, go to settings => Site Design => Site-wide, you'll be able to find settings for your name and title, these will show up in the nav bar.
-
-Prompt is under settings => SiteDesign => Homepage, this will change the prompt of the terminal on the home page.
-
+In the ghost admin page, go to settings => Site Design => Site-wide, you'll be able to find settings for your name and title, these will show up in the nav bar. The terminal prompt name is for the prompt on the home page.
 
 ## Routing
 In the ghost admin page, go to settings => Labs => Routes and upload mini/routes/routes.yaml. 
