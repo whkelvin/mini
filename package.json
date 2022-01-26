@@ -29,8 +29,7 @@
     "custom": {
       "terminal_prompt_name": {
         "type": "text",
-        "default": "LiveLongAndProsper",
-        "group": "homepage"
+        "default": "LiveLongAndProsper"
       },
       "user_name": {
         "type": "text",
