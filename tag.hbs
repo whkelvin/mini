@@ -1,0 +1,13 @@
+{{!< default}}
+  <div class="container tag">
+    {{#tag}}
+      <h2>{{ name }}</h2>
+    {{/tag}}
+
+    <div class="posts-wrapper">
+    {{#foreach posts}}
+      {{> "post-card"}}
+    {{/foreach}}
+    </div>
+    {{pagination}}
+  </div>

@@ -43,7 +43,8 @@
 
 .post-card h1,
 .resume h1,
-.post h1
+.post h1,
+.tag h1
 {
   @apply text-3xl;
   @apply text-nord-dark dark:text-snow-dark;
@@ -52,6 +53,10 @@
 .post h1
 {
   @apply mb-3;
+}
+.tag h1
+{
+  @apply mb-5;
 }
 
 .post-card h2,

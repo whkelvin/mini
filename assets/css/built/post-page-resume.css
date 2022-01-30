@@ -162,7 +162,7 @@
   }
 }
 
-.post-card h1, .resume h1, .post h1
+.post-card h1, .resume h1, .post h1, .tag h1
 {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -170,19 +170,23 @@
   color: rgb(59 66 82 / var(--tw-text-opacity));
 }
 
-.dark .post-card h1, .dark .resume h1, .dark .post h1
+.dark .post-card h1, .dark .resume h1, .dark .post h1, .dark .tag h1
 {
   --tw-text-opacity: 1;
   color: rgb(216 222 233 / var(--tw-text-opacity));
 }
 
-.post-card h1, .resume h1, .post h1
+.post-card h1, .resume h1, .post h1, .tag h1
 {
   font-weight: 700;
 }
 .post h1
 {
   margin-bottom: 0.75rem;
+}
+.tag h1
+{
+  margin-bottom: 1.25rem;
 }
 
 .post-card h2, .resume h2, .post h2

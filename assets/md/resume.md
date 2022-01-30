@@ -39,7 +39,7 @@ Charlottetown, PE, Canada
 ##### May 2019 - July 2019
 &nbsp;
 
-## Product Application Engineer Intern, SchneiderElectric
+## Product Application Engineer Intern, Schneider Electric
 ### PLC / C / LabView
 ##### May 2016 - July 2016
 
