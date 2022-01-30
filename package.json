@@ -50,7 +50,6 @@
   },
   "scripts": {
     "dev": "postcss ./assets/css/raw/*.css --base ./assets/css/raw --dir ./assets/css/built ;  ghost restart ;",
-    "build": "NODE_ENV=production npm run dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-prod": "mkdir Release; mkdir Release/tmp; \\cp ./*.hbs ./Release/tmp/; \\cp package.json ./Release/tmp/; \\cp -r ./partials/ ./Release/tmp/partials/; \\cp -r ./assets/ ./Release/tmp/assets/; zip -r ./Release/mini.zip ./Release/tmp/; rm -r ./Release/tmp/;"
   }
 }
