@@ -104,7 +104,7 @@
 }
 .post h5
 {
-  @apply mb-3;
+  @apply mb-1;
 }
 
 .resume figcaption,
@@ -203,9 +203,11 @@
 
 .post pre
 {
+  @apply overflow-auto;
   @apply bg-white-default dark:bg-nord-dark;
   @apply p-4;
   @apply rounded-md;
   @apply drop-shadow-sm;
+  @apply mb-5;
 }
 
