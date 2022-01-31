@@ -1,7 +1,7 @@
 {
   "name": "mini",
   "description": "A minimal Ghost theme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "ghost": ">=4.0.0",
     "ghost-api": "v4"
@@ -50,6 +50,6 @@
   },
   "scripts": {
     "dev": "postcss ./assets/css/raw/*.css --base ./assets/css/raw --dir ./assets/css/built ;  ghost restart ;",
-    "build-prod": "mkdir Release; mkdir Release/tmp; \\cp ./*.hbs ./Release/tmp/; \\cp package.json ./Release/tmp/; \\cp -r ./partials/ ./Release/tmp/partials/; \\cp -r ./assets/ ./Release/tmp/assets/; zip -r ./Release/mini.zip ./Release/tmp/; rm -r ./Release/tmp/;"
+    "build-prod": "postcss ./assets/css/raw/*.css --base ./assets/css/raw --dir ./assets/css/built; mkdir Release; mkdir Release/tmp; \\cp ./*.hbs ./Release/tmp/; \\cp package.json ./Release/tmp/; \\cp -r ./partials/ ./Release/tmp/partials/; \\cp -r ./assets/ ./Release/tmp/assets/; zip -r ./Release/mini.zip ./Release/tmp/; rm -r ./Release/tmp/;"
   }
 }
