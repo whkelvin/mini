@@ -199,15 +199,28 @@
 .post pre code
 {
   font-family: "Ubuntu";
+  @apply font-bold;
 }
 
 .post pre
 {
   @apply overflow-auto;
-  @apply bg-white-default dark:bg-nord-dark;
   @apply p-4;
   @apply rounded-md;
-  @apply drop-shadow-sm;
+  @apply drop-shadow-md;
   @apply mb-5;
+  @apply bg-glass2-dark;
+  @apply text-snow-dark;
 }
 
+.post p code
+{
+  @apply overflow-auto;
+  @apply pl-2 pr-2 pt-1 pb-1;
+  @apply rounded-sm;
+  @apply mb-5;
+  @apply bg-glass2-dark;
+  @apply text-snow-dark;
+  font-family: Ubuntu;
+  @apply text-base;
+}

@@ -44,7 +44,8 @@ Add a new page in the ghost admin and set the page URL to resume, and your resum
 Links defined in Primary Navigation under settings => navigation will show up.
 
 # Credits
-Matrix background code is borrowed and modified from [here](https://medium.com/@twineworks/fun-with-html-canvas-build-the-matrix-c87c4bb12487)
+- Matrix background code is borrowed and modified from [here](https://medium.com/@twineworks/fun-with-html-canvas-build-the-matrix-c87c4bb12487)
+- The beautiful [Nord](https://www.nordtheme.com/) theme
 
 # License
 MIT, WTFPL

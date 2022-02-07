@@ -1,0 +1,116 @@
+code[class*="language-"],
+pre[class*="language-"] {
+  @apply text-snow-dark;
+	background: none;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  @apply bg-glass2-dark dark:bg-glass2-dark;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  @apply text-yellow-dark;
+}
+
+.token.punctuation {
+  @apply text-grey-default;
+}
+
+.token.tag,
+.token.attr-name,
+.token.namespace,
+.token.deleted {
+  @apply text-frost-lightBlue;
+}
+
+.token.function-name {
+  @apply text-blue-default;
+}
+
+.token.boolean,
+.token.number,
+.token.function {
+  @apply text-frost-teal;
+}
+
+.token.property,
+.token.class-name,
+.token.constant,
+.token.symbol {
+  @apply text-frost-lightBlue;
+}
+
+.token.selector,
+.token.important,
+.token.atrule,
+.token.keyword,
+.token.builtin {
+  @apply text-frost-blue;
+}
+
+.token.string,
+.token.char,
+.token.attr-value,
+.token.regex,
+.token.variable {
+  @apply text-green-default;
+}
+
+.token.operator,
+.token.entity,
+.token.url {
+  @apply text-frost-teal;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+.token.inserted {
+  @apply text-green-default;
+}
+

@@ -1,0 +1,107 @@
+code[class*="language-"], pre[class*="language-"] {
+	--tw-text-opacity: 1;
+	color: rgb(216 222 233 / var(--tw-text-opacity));
+	background: none;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"], pre[class*="language-"] {
+	--tw-bg-opacity: 1;
+	background-color: rgb(59 66 82 / var(--tw-bg-opacity));
+}
+
+.dark :not(pre) > code[class*="language-"], .dark pre[class*="language-"] {
+	--tw-bg-opacity: 1;
+	background-color: rgb(59 66 82 / var(--tw-bg-opacity));
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment, .token.block-comment, .token.prolog, .token.doctype, .token.cdata {
+	--tw-text-opacity: 1;
+	color: rgb(234 200 133 / var(--tw-text-opacity));
+}
+
+.token.punctuation {
+	--tw-text-opacity: 1;
+	color: rgb(182 182 182 / var(--tw-text-opacity));
+}
+
+.token.tag, .token.attr-name, .token.namespace, .token.deleted {
+	--tw-text-opacity: 1;
+	color: rgb(136 192 208 / var(--tw-text-opacity));
+}
+
+.token.function-name {
+	--tw-text-opacity: 1;
+	color: rgb(94 129 172 / var(--tw-text-opacity));
+}
+
+.token.boolean, .token.number, .token.function {
+	--tw-text-opacity: 1;
+	color: rgb(143 188 187 / var(--tw-text-opacity));
+}
+
+.token.property, .token.class-name, .token.constant, .token.symbol {
+	--tw-text-opacity: 1;
+	color: rgb(136 192 208 / var(--tw-text-opacity));
+}
+
+.token.selector, .token.important, .token.atrule, .token.keyword, .token.builtin {
+	--tw-text-opacity: 1;
+	color: rgb(129 161 193 / var(--tw-text-opacity));
+}
+
+.token.string, .token.char, .token.attr-value, .token.regex, .token.variable {
+	--tw-text-opacity: 1;
+	color: rgb(163 190 140 / var(--tw-text-opacity));
+}
+
+.token.operator, .token.entity, .token.url {
+	--tw-text-opacity: 1;
+	color: rgb(143 188 187 / var(--tw-text-opacity));
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+.token.inserted {
+	--tw-text-opacity: 1;
+	color: rgb(163 190 140 / var(--tw-text-opacity));
+}
+
