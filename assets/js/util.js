@@ -26,7 +26,7 @@ function setTheme() {
 }
 
 if (window.localStorage.getItem("IsDarkModeEnabled") === null) {
-  window.localStorage.setItem("IsDarkModeEnabled", "false");
+  window.localStorage.setItem("IsDarkModeEnabled", "true");
 }
 setTheme();
 

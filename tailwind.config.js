@@ -70,6 +70,10 @@ module.exports = {
             grey:{
               default: "#B6B6B6",
               dark: "#717E98"
+            },
+            glass2:{
+              default: "#eceff4",
+              dark: "#3b4252"
             }
         },
     },
