@@ -72,7 +72,7 @@ module.exports = {
               dark: "#717E98"
             },
             glass2:{
-              default: "#eceff4",
+              default: "#d8dee9",
               dark: "#3b4252"
             }
         },
