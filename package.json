@@ -1,7 +1,7 @@
 {
   "name": "mini",
   "description": "A minimal Ghost theme",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "ghost": ">=4.0.0",
     "ghost-api": "v4"
